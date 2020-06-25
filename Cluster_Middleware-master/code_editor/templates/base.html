@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Code Editor</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'code_editor/css/bootstrap.min.css' %}" />
+    	<link rel="stylesheet" type="text/css" href="{% static 'code_editor/css/custom.css' %}" />
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+        <!-- jQuery -->
+	    <script src="{% static 'code_editor/js/jquery.min.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <!-- Bootstrap (include all individual files below) -->
+	    <script src="{% static 'code_editor/js/custom.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <script src="{% static 'code_editor/js/FileSaver.min.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <script src="{% static 'code_editor/js/jszip.min.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <script src="{% static 'code_editor/js/bootstrap.min.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <script src="{% static 'code_editor/ace-builds/src/ace.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <script src="{% static 'code_editor/ace-builds/src/ext-statusbar.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <script src="{% static 'code_editor/ace-builds/src/ext-language_tools.js' %}" type="text/javascript" charset="utf-8"></script>
+	    <!-- Include all the custom js here -->
+    </body>
+</html>
